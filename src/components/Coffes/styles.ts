@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const CoffeesContainer = styled.div`
   display: flex;
   position: absolute;
-  height: 1645px;
+  min-height: 90vh;
   top: 648px;
   padding: 128px 160px;
   & > h2 {
@@ -22,21 +22,20 @@ export const CoffeesContainer = styled.div`
 `
 
 export const CoffeesList = styled.div`
+  display: flex;
   position: absolute;
   width: 1120px;
   top: 128px;
+  gap: 32px;
 `
 
 export const CoffeeCard = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
   padding: 0 20px;
   width: 256px;
   height: 310px;
-  left: 0px;
-  top: 0px;
   border-radius: 6px 36px;
   background: ${(props) => props.theme.base['base-card']};
   & img {
@@ -46,7 +45,6 @@ export const CoffeeCard = styled.div`
     margin-bottom: 12px;
   }
 `
-
 export const CoffeeTag = styled.div`
   width: 100%;
   display: flex;
@@ -93,15 +91,8 @@ export const CoffeeDescription = styled.div`
 export const CoffeSale = styled.div`
   display: flex;
   align-items: center;
-  position: absolute;
-  height: 38px;
-  left: 24px;
-  right: 24px;
-  bottom: 20px;
-  height: 38px;
+  margin-top: 33px;
   width: 208px;
-  left: 24px;
-  top: 252px;
   border-radius: 0px;
   justify-content: space-between;
 

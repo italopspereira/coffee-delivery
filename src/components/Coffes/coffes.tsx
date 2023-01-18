@@ -14,7 +14,26 @@ export function Coffes() {
     <CoffeesContainer>
       <h2>Nossos cafés</h2>
       <CoffeesList>
-        <CoffeeCard>
+        <CoffeeCard key="teste">
+          <img src={Coffee} alt="" />
+          <CoffeeTag>
+            <span>Tradicional</span>
+          </CoffeeTag>
+          <CoffeeDescription>
+            <h3>Expresso Tradicional</h3>
+            <p>O tradicional café feito com água quente e grãos moídos</p>
+          </CoffeeDescription>
+          <CoffeSale>
+            <p>
+              R$ <span> 9,90</span>
+            </p>
+            <CoffeeQuantity></CoffeeQuantity>
+            <button>
+              <IoMdCart />
+            </button>
+          </CoffeSale>
+        </CoffeeCard>
+        <CoffeeCard key="tesdddte">
           <img src={Coffee} alt="" />
           <CoffeeTag>
             <span>Tradicional</span>
