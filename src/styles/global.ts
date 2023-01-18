@@ -6,8 +6,9 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    border: none;
   }
   body{
     background: ${(props) => props.theme.base['background']};
-  }
+  } 
 `

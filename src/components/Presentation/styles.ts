@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-
 export const PresentationContainer = styled.div`
   position: absolute;
   display: flex;
@@ -10,13 +9,12 @@ export const PresentationContainer = styled.div`
   left: 0px;
   right: 0px;
   padding: 0 160px;
+  background: url('./src/assets/Background.svg');
+  background-size: 100%;
 
   & > div {
     position: absolute;
     width: 588px;
-    height: 192px;
-    left: calc(50% - 588px / 2 - 266px);
-    top: calc(50% - 192px / 2 - 82px);
     & h1 {
       color: ${(props) => props.theme.base['base-title']};
       font-family: 'Baloo 2';
