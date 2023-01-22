@@ -7,12 +7,14 @@ import {
   CoffeesSelectCard,
   PaymentMethod,
   AddressTitle,
+  SubmitButton,
 } from './styles'
 import { TbMapPin } from 'react-icons/tb'
 import { Form } from './components/Form/Form'
 import { Payment } from './components/Payment/Payment'
-import { PaymentMethodButton } from './components/Payment/styles'
-import { SelectedCoffes } from './components/SelectedCoffes/SelectedCoffes'
+import { CoffeeInCart } from './components/SelectedCoffes/CoffeeInCart'
+import { TotalPrice } from './components/TotalPrice/TotalPrice'
+
 export function Checkout() {
   return (
     <CheckoutContainer>
@@ -36,7 +38,10 @@ export function Checkout() {
         <CoffeesSelect>
           <p>Cafés selecionados</p>
           <CoffeesSelectCard>
-            <SelectedCoffes></SelectedCoffes>
+            <CoffeeInCart></CoffeeInCart>
+            <CoffeeInCart></CoffeeInCart>
+            <TotalPrice></TotalPrice>
+            <SubmitButton>Confirmar pedido</SubmitButton>
           </CoffeesSelectCard>
         </CoffeesSelect>
       </CheckoutCard>
