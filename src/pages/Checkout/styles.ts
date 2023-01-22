@@ -58,7 +58,6 @@ export const CoffeesSelectCard = styled.div`
   border-radius: 6px 44px;
   background: ${(props) => props.theme.base['base-card']};
 `
-
 export const AddressTitle = styled.div`
   display: flex;
   & > svg {
@@ -77,4 +76,19 @@ export const AddressTitle = styled.div`
       font-size: 14px;
     }
   }
+`
+
+export const SubmitButton = styled.button`
+  padding: 12px 8px;
+  gap: 4px;
+  width: 368px;
+  height: 46px;
+  margin-top: 24px;
+  background: ${(props) => props.theme.products['yellow']};
+  color: ${(props) => props.theme.base['white']};
+  cursor: pointer;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
 `
