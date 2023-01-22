@@ -14,7 +14,7 @@ export function Coffes() {
     <CoffeesContainer>
       <h2>Nossos cafés</h2>
       <CoffeesList>
-        <CoffeeCard key="teste">
+        <CoffeeCard key="">
           <img src={Coffee} alt="" />
           <CoffeeTag>
             <span>Tradicional</span>
@@ -33,7 +33,7 @@ export function Coffes() {
             </button>
           </CoffeSale>
         </CoffeeCard>
-        <CoffeeCard key="tesdddte">
+        <CoffeeCard key="">
           <img src={Coffee} alt="" />
           <CoffeeTag>
             <span>Tradicional</span>

@@ -58,3 +58,23 @@ export const CoffeesSelectCard = styled.div`
   border-radius: 6px 44px;
   background: ${(props) => props.theme.base['base-card']};
 `
+
+export const AddressTitle = styled.div`
+  display: flex;
+  & > svg {
+    color: ${(props) => props.theme.products['yellow-dark']};
+  }
+  & > div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+    & > label {
+      color: ${(props) => props.theme.base['base-subtitle']};
+      font-size: 16px;
+    }
+    & > span {
+      color: ${(props) => props.theme.base['base-text']};
+      font-size: 14px;
+    }
+  }
+`
