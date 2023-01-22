@@ -4,6 +4,8 @@ export const FormContainer = styled.form`
   display: flex;
   flex-direction: column;
   gap: 16px;
+  & > input {
+  }
   & > div:nth-child(2) {
     & > input {
       height: 42px;
@@ -35,5 +37,6 @@ export const InputContainer = styled.div`
     padding: 12px;
     background: ${(props) => props.theme.base['base-input']};
     border: 1px solid ${(props) => props.theme.base['base-button']};
+    color: ${(props) => props.theme.base['base-text']};
   }
 `
