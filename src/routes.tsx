@@ -6,7 +6,7 @@ import {
 import { Header } from './components/Header/header'
 import { Home } from './pages/Home/index'
 import { Checkout } from './pages/Checkout'
-
+import { SuccessPage } from './pages/Success'
 export const Routes = () => {
   return (
     <Router>
@@ -14,6 +14,7 @@ export const Routes = () => {
       <Switch>
         <Route path="/" element={<Home />} />
         <Route path="/checkout" element={<Checkout />} />
+        <Route path="/success" element={<SuccessPage />} />
       </Switch>
     </Router>
   )
